@@ -3,71 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b1220">
+<link rel="stylesheet" href="common.css">
 <title>بطاقات الاستذكار — R3D</title>
 <style>
-  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body {
-    margin: 0; padding: 20px 16px calc(24px + env(safe-area-inset-bottom));
-    font-family: -apple-system, "Segoe UI", "Noto Naskh Arabic", sans-serif;
-    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
-    color: #e2e8f0; min-height: 100vh;
-  }
-  .wrap { max-width: 480px; margin: 0 auto; }
-  h1 { font-size: 1.4rem; margin: 0 0 4px; color: #fbbf24; }
-  .sub { color: #94a3b8; font-size: .85rem; margin: 0 0 20px; }
-  a.lesson {
-    display: flex; align-items: center; gap: 14px;
-    background: rgba(30,41,59,.8); border: 1px solid rgba(148,163,184,.2);
-    border-radius: 16px; padding: 16px; margin-bottom: 12px;
-    text-decoration: none; color: inherit;
-    transition: transform .15s ease, border-color .15s ease;
-  }
-  a.lesson:active { transform: scale(.97); }
-  .num {
-    width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.3rem; font-weight: bold; color: #1e293b;
-  }
-  .info { flex: 1; }
-  .info b { font-size: 1.05rem; display: block; margin-bottom: 2px; }
-  .info span { font-size: .8rem; color: #94a3b8; }
-  .tip {
-    margin-top: 18px; padding: 14px; border-radius: 12px;
-    background: rgba(251,191,36,.08); border: 1px dashed rgba(251,191,36,.3);
-    font-size: .82rem; color: #cbd5e1; line-height: 1.7;
-  }
+  .wrap{width:100%; max-width:480px; display:flex; flex-direction:column; align-items:center;}
+  .bookline{font-size:12px; color:var(--dim); margin-bottom:2px;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>📚 بطاقات الاستذكار</h1>
-  <p class="sub">汉语教程 · اضغط على الدرس — يعمل بدون إنترنت</p>
 
-  <a class="lesson" href="lesson1-flashcards.html">
-    <div class="num">1</div>
-    <div class="info"><b>第一课</b><span>lesson 1</span></div>
-  </a>
-  <a class="lesson" href="lesson2-flashcards.html">
-    <div class="num">2</div>
-    <div class="info"><b>第二课</b><span>lesson 2</span></div>
-  </a>
-  <a class="lesson" href="lesson3-flashcards.html">
-    <div class="num">3</div>
-    <div class="info"><b>第三课</b><span>lesson 3</span></div>
-  </a>
-  <a class="lesson" href="lesson4-flashcards.html">
-    <div class="num">4</div>
-    <div class="info"><b>第四课</b><span>lesson 4</span></div>
-  </a>
-  <a class="lesson" href="lesson5-flashcards.html">
-    <div class="num">5</div>
-    <div class="info"><b>第五课</b><span>lesson 5</span></div>
+  <header>
+    <div class="langBox" id="langBox"></div>
+    <div class="navrow">
+      <a class="navbtn on" href="index.html" data-i18n="nav.index">🏠 الرئيسية</a>
+      <a class="navbtn" href="review.html" data-i18n="nav.review">📒 المراجعة</a>
+    </div>
+    <div class="bookline" id="bookLine"></div>
+    <h1 data-i18n="index.title">بطاقات الاستذكار</h1>
+    <div class="sub" data-i18n="index.sub">اضغط على الدرس — يعمل بدون إنترنت</div>
+  </header>
+
+  <a class="bigrev" href="review.html">
+    <span data-i18n="index.reviewBtn">📒 مجموعة المراجعة</span>
+    <span class="badge zero" id="revBadge">0</span>
   </a>
 
-  <div class="tip">
-    💡 <b>خليها كتطبيق:</b> في سفاري اضغط زر المشاركة ⬆️ ثم «إضافة إلى الشاشة الرئيسية» — تفتح بضغطة بدون متصفح.
+  <div class="stats">
+    <span class="y" id="mstLine"></span>
   </div>
+
+  <div class="lessons" id="lessonList"></div>
+
+  <div class="tip" data-i18n="index.tip">💡 في سفاري: زر المشاركة ← «إضافة إلى الشاشة الرئيسية»</div>
+
 </div>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script>
+(function(){
+'use strict';
+const D = window.R3D_DATA;
+const $ = id => document.getElementById(id);
+
+$('bookLine').textContent = D.books;
+
+function lessonStats(l){
+  const marks = R3D.LS.get('r3d-marks-' + l.id, {}) || {};
+  const total = D.cards[l.id].length;
+  let known = 0;
+  Object.keys(marks).forEach(i => { if(marks[i]==='know') known++; });
+  const pct = total ? Math.round(known/total*100) : 0;
+  const quiz = (R3D.LS.get(R3D.KEY.quiz, {}) || {})[l.id];
+  return {total: total, known: known, pct: pct, quiz: quiz};
+}
+
+function renderBadges(){
+  const rc = R3D.reviewCount();
+  const badge = $('revBadge');
+  badge.textContent = rc;
+  badge.className = 'badge' + (rc === 0 ? ' zero' : '');
+  $('mstLine').textContent = R3D.t('index.mastered', {n: R3D.masteredCount()});
+}
+
+function renderLessons(){
+  const list = $('lessonList');
+  list.innerHTML = '';
+  D.lessons.forEach((l, n) => {
+    const s = lessonStats(l);
+    const a = document.createElement('a');
+    a.className = 'lesson';
+    a.href = l.file;
+
+    const num = document.createElement('div');
+    num.className = 'num'; num.textContent = (n+1);
+
+    const info = document.createElement('div');
+    info.className = 'info';
+
+    const b = document.createElement('b');
+    b.innerHTML = '<span class="cn">' + l.num + '</span> · <span class="cn">' + l.title + '</span>';
+
+    const bar = document.createElement('div');
+    bar.className = 'pbar';
+    const fill = document.createElement('i');
+    fill.style.width = s.pct + '%';
+    bar.appendChild(fill);
+
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    const p1 = document.createElement('span');
+    p1.textContent = R3D.t('index.progress', {p: s.pct});
+    const p2 = document.createElement('span');
+    p2.textContent = s.quiz
+      ? R3D.t('index.quizScore', {s: s.quiz.score, t: s.quiz.total})
+      : R3D.t('index.noQuiz');
+    meta.appendChild(p1); meta.appendChild(p2);
+
+    info.appendChild(b); info.appendChild(bar); info.appendChild(meta);
+    a.appendChild(num); a.appendChild(info);
+    list.appendChild(a);
+  });
+}
+
+R3D.mountLangSelector();
+renderBadges();
+renderLessons();
+window.addEventListener('r3d:lang', () => { renderBadges(); renderLessons(); });
+window.addEventListener('r3d:review', renderBadges);
+window.addEventListener('r3d:quiz', renderBadges);
+})();
+</script>
 </body>
 </html>

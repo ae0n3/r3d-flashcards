@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b1220">
+<link rel="stylesheet" href="common.css">
+<title>مجموعة المراجعة — R3D</title>
+</head>
+<body>
+
+<header>
+  <div class="langBox" id="langBox"></div>
+  <div class="navrow">
+    <a class="navbtn" href="index.html" data-i18n="nav.index">🏠 الرئيسية</a>
+    <a class="navbtn on" href="review.html" data-i18n="nav.review">📒 المراجعة</a>
+  </div>
+  <h1 data-i18n="review.title">مجموعة المراجعة</h1>
+  <div class="stats">
+    <span class="r" id="remLine"></span>
+    <span class="g" id="mstLine"></span>
+    <span class="y" id="streakLine"></span>
+  </div>
+</header>
+
+<div class="revbar"><i id="rbar"></i></div>
+
+<div class="revstage">
+  <div class="revcard" id="rcard">
+    <div class="revface" id="rfront">
+      <span class="revtag w" id="rtag">كلمة</span>
+      <button class="spk" id="rspk" title="استمع" data-i18n-title="btn.listen">🔊</button>
+      <div class="revbig" id="rbig"></div>
+      <span class="revhint" data-i18n="review.hint">اضغط للقلب ↻ · 🔊 للنطق</span>
+    </div>
+    <div class="revface back" id="rback">
+      <span class="revtag w" id="rtagb"></span>
+      <div id="rbackBody"></div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button class="btn" id="rprev" data-i18n="btn.prev">‹ السابق</button>
+  <button class="btn know" id="rknow" data-i18n="review.know">✓ أعرفها</button>
+  <button class="btn dunno" id="rdunno" data-i18n="review.dunno">✗ لسه أراجعها</button>
+  <button class="btn" id="rnext" data-i18n="btn.next">التالي ›</button>
+</div>
+
+<div class="empty" id="rempty">
+  <div class="big2">🎉</div>
+  <div class="t" data-i18n="review.empty">ما فيه كلمات للمراجعة</div>
+  <div class="s" data-i18n="review.emptyTxt"></div>
+  <a class="btn know" href="index.html" style="margin-top:16px; text-decoration:none; display:block;" data-i18n="review.back">← رجوع</a>
+</div>
+
+<footer data-i18n="footer.tts">نطق الكلمات: تحت الحرف الصيني بالبينيين مع علامات النغمات</footer>
+
+<div class="toast hide" id="toast"></div>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script>
+(function(){
+'use strict';
+const D = window.R3D_DATA;
+const $ = id => document.getElementById(id);
+const CATKEY = {word:'tag.word', sent:'tag.sent', gram:'tag.gram'};
+
+let items = [];   // resolved review items: {key, lesson, idx, card}
+let idx = 0;
+let flipped = false;
+
+function loadItems(){
+  const r = R3D.reviewAll();
+  items = Object.keys(r)
+    .filter(k => r[k].s === 'review')
+    .map(k => R3D.cardByKey(k))
+    .filter(Boolean);
+  R3D.shuffleArr(items);
+  if(idx >= items.length) idx = Math.max(0, items.length - 1);
+}
+
+function renderStats(){
+  const rem = R3D.reviewCount();
+  $('remLine').textContent = R3D.t('review.remaining', {n: rem});
+  $('mstLine').textContent = R3D.t('review.mastered', {n: R3D.masteredCount()});
+  const cur = items[idx];
+  const st = cur ? R3D.reviewGet(cur.key) : {n: 0};
+  $('streakLine').textContent = items.length ? R3D.t('review.streak', {n: st.n || 0}) : '';
+}
+
+function render(){
+  const has = items.length > 0;
+  $('rcard').style.display = has ? '' : 'none';
+  document.querySelector('.controls').style.display = has ? '' : 'none';
+  $('rempty').classList.toggle('show', !has);
+  if(!has){ renderStats(); return; }
+
+  idx = Math.max(0, Math.min(idx, items.length-1));
+  const it = items[idx];
+  const c = it.card;
+  flipped = false;
+  $('rcard').classList.remove('flipped');
+
+  const t1 = $('rtag');
+  t1.textContent = it.lesson.num + ' · ' + R3D.t(CATKEY[c.cat] || 'tag.word');
+  t1.className = 'revtag ' + c.cat.charAt(0);
+  $('rbig').textContent = c.front;
+
+  let html = '';
+  if(c.cat === 'word'){
+    html += '<div class="revpy">'+c.py+'</div>';
+    html += '<div class="revar">'+c.ar+'</div>';
+    if(c.type) html += '<div class="revtype">'+c.type+'</div>';
+    if(c.ex) html += '<div class="revex"><span class="cn">'+c.ex+'</span></div>';
+  } else {
+    if(c.sub) html += '<div class="revtype">'+c.sub+'</div>';
+    html += '<div class="revpy">'+(c.py||'')+'</div>';
+    html += '<div class="revar" style="text-align:right;">'+c.ar+'</div>';
+  }
+  $('rbackBody').innerHTML = html;
+  const tb = $('rtagb');
+  tb.textContent = R3D.t(CATKEY[c.cat] || '');
+  tb.className = 'revtag ' + c.cat.charAt(0);
+
+  renderStats();
+}
+
+function flip(){ flipped = !flipped; $('rcard').classList.toggle('flipped', flipped); }
+function next(){ if(idx < items.length-1){ idx++; render(); } }
+function prev(){ if(idx > 0){ idx--; render(); } }
+
+function showToast(msg){
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.remove('hide');
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(()=> t.classList.add('hide'), 1600);
+}
+
+function answer(v){
+  if(!items.length) return;
+  const it = items[idx];
+  if(v === 'know'){
+    const res = R3D.answerCorrect(it.key);
+    if(res === 'mastered'){
+      showToast(R3D.t('review.masteredToast'));
+      loadItems();
+      render();
+      setTimeout(next, 700);
+      return;
+    }
+    renderStats();
+    setTimeout(next, 500);
+  } else {
+    R3D.answerWrong(it.key);
+    renderStats();
+    setTimeout(next, 500);
+  }
+}
+
+$('rcard').addEventListener('click', flip);
+$('rspk').addEventListener('click', e => { e.stopPropagation(); if(items[idx]) R3D.playCard(items[idx].key); });
+$('rnext').addEventListener('click', next);
+$('rprev').addEventListener('click', prev);
+$('rknow').addEventListener('click', e => { e.stopPropagation(); answer('know'); });
+$('rdunno').addEventListener('click', e => { e.stopPropagation(); answer('dunno'); });
+
+document.addEventListener('keydown', e => {
+  if(e.key==='ArrowLeft') prev();
+  else if(e.key==='ArrowRight') next();
+  else if(e.key===' '){ e.preventDefault(); flip(); }
+  else if(e.key==='k'||e.key==='K') answer('know');
+  else if(e.key==='j'||e.key==='J') answer('dunno');
+});
+
+window.addEventListener('r3d:lang', render);
+window.addEventListener('r3d:review', () => { loadItems(); render(); });
+
+R3D.mountLangSelector();
+loadItems();
+render();
+
+// prime audio on first gesture (iOS rule)
+document.addEventListener('pointerdown', () => R3D.primeAudio(''), {once:true, passive:true});
+})();
+</script>
+</body>
+</html>
