@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>بطاقات الاستذكار — R3D</title>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0; padding: 20px 16px calc(24px + env(safe-area-inset-bottom));
+    font-family: -apple-system, "Segoe UI", "Noto Naskh Arabic", sans-serif;
+    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0; min-height: 100vh;
+  }
+  .wrap { max-width: 480px; margin: 0 auto; }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; color: #fbbf24; }
+  .sub { color: #94a3b8; font-size: .85rem; margin: 0 0 20px; }
+  a.lesson {
+    display: flex; align-items: center; gap: 14px;
+    background: rgba(30,41,59,.8); border: 1px solid rgba(148,163,184,.2);
+    border-radius: 16px; padding: 16px; margin-bottom: 12px;
+    text-decoration: none; color: inherit;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  a.lesson:active { transform: scale(.97); }
+  .num {
+    width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; font-weight: bold; color: #1e293b;
+  }
+  .info { flex: 1; }
+  .info b { font-size: 1.05rem; display: block; margin-bottom: 2px; }
+  .info span { font-size: .8rem; color: #94a3b8; }
+  .tip {
+    margin-top: 18px; padding: 14px; border-radius: 12px;
+    background: rgba(251,191,36,.08); border: 1px dashed rgba(251,191,36,.3);
+    font-size: .82rem; color: #cbd5e1; line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📚 بطاقات الاستذكار</h1>
+  <p class="sub">汉语教程 · اضغط على الدرس — يعمل بدون إنترنت</p>
+
+  <a class="lesson" href="lesson1-flashcards.html">
+    <div class="num">1</div>
+    <div class="info"><b>第一课</b><span>lesson 1</span></div>
+  </a>
+  <a class="lesson" href="lesson2-flashcards.html">
+    <div class="num">2</div>
+    <div class="info"><b>第二课</b><span>lesson 2</span></div>
+  </a>
+  <a class="lesson" href="lesson3-flashcards.html">
+    <div class="num">3</div>
+    <div class="info"><b>第三课</b><span>lesson 3</span></div>
+  </a>
+  <a class="lesson" href="lesson4-flashcards.html">
+    <div class="num">4</div>
+    <div class="info"><b>第四课</b><span>lesson 4</span></div>
+  </a>
+  <a class="lesson" href="lesson5-flashcards.html">
+    <div class="num">5</div>
+    <div class="info"><b>第五课</b><span>lesson 5</span></div>
+  </a>
+
+  <div class="tip">
+    💡 <b>خليها كتطبيق:</b> في سفاري اضغط زر المشاركة ⬆️ ثم «إضافة إلى الشاشة الرئيسية» — تفتح بضغطة بدون متصفح.
+  </div>
+</div>
+</body>
+</html>
