@@ -240,13 +240,13 @@ function render(){
   let html = '';
   if(c.cat === 'word'){
     html += '<div class="py">'+c.py+'</div>';
-    html += '<div class="ar">'+c.ar+'</div>';
-    if(c.type) html += '<div class="type">'+c.type+'</div>';
+    html += '<div class="ar">'+gloss(c)+'</div>';
+    if(c.type) html += '<div class="type">'+cardType(c)+'</div>';
     if(c.ex) html += '<div class="ex"><span class="cn">'+c.ex+'</span>'+R3D.t('tag.sent')+'</div>';
   } else {
-    if(c.sub) html += '<div class="type">'+c.sub+'</div>';
+    if(c.sub) html += '<div class="type">'+cardSub(c)+'</div>';
     html += '<div class="py">'+(c.py||'')+'</div>';
-    html += '<div class="ar" style="text-align:right;">'+c.ar+'</div>';
+    html += '<div class="ar" style="text-align:right;">'+gloss(c)+'</div>';
   }
   $('backBody').innerHTML = html;
   const tb = $('tagb');

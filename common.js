@@ -214,6 +214,27 @@ function t(key, vars) {
   return s;
 }
 function setLang(l) { if (!I18N[l]) return; lang = l; LS.set(KEY.lang, l); applyI18n(); }
+// card gloss in the current UI language (falls back to Arabic, then English)
+function gloss(card) {
+  if (!card) return '';
+  const tr = card.trans || {};
+  return tr[lang] || card.ar || tr.en || '';
+}
+function glossOf(front, lessonId) {
+  const cards = (window.R3D_DATA && window.R3D_DATA.cards[lessonId]) || [];
+  const c = cards.find(x => x.front === front);
+  return c ? gloss(c) : '';
+}
+function cardType(card) {
+  if (!card) return '';
+  const tr = card.trans_type || {};
+  return tr[lang] || card.type || '';
+}
+function cardSub(card) {
+  if (!card) return '';
+  const tr = card.trans_sub || {};
+  return tr[lang] || card.sub || '';
+}
 function applyI18n() {
   document.documentElement.lang = lang;
   document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
@@ -373,7 +394,7 @@ function shuffleArr(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math
 
 // ---------------- quiz engine ----------------
 function buildQuiz(lessonId) {
-  const arr = (window.R3D_DATA.cards[lessonId] || []).map((c, i) => ({ i: i, cat: c.cat, front: c.front, ar: stripHtml(c.ar) }));
+  const arr = (window.R3D_DATA.cards[lessonId] || []).map((c, i) => ({ i: i, cat: c.cat, front: c.front, ar: gloss(c) }));
   const usable = arr.filter(c => c.cat !== 'gram' && c.front && c.ar);
   const qs = usable.map(c => {
     const dir = Math.random() < 0.5 ? 'zh2ar' : 'ar2zh';
@@ -515,7 +536,8 @@ window.R3D = {
   blobUrl: blobUrl, primeAudio: primeAudio, play: play,
   playCard: playCard, lessonAudio: lessonAudio,
   Marks: Marks, Quiz: Quiz,
-  stripHtml: stripHtml, shuffleArr: shuffleArr, buildQuiz: buildQuiz
+  stripHtml: stripHtml, shuffleArr: shuffleArr, buildQuiz: buildQuiz,
+  gloss: gloss, glossOf: glossOf, cardType: cardType, cardSub: cardSub
 };
 
 applyI18n();
