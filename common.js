@@ -208,7 +208,7 @@ const LANGS = ['ar', 'zh', 'en', 'es', 'fr'];
 let lang = LS.get(KEY.lang, null);
 if (!lang || !I18N[lang]) {
   // first visit (or unknown stored value): detect from the device language
-  const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+  const nav = (navigator.language || (navigator.languages && navigator.languages[0]) || 'en').toLowerCase();
   const code = nav.slice(0, 2);
   lang = I18N[code] ? code : 'ar';
 }
