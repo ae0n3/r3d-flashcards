@@ -209,6 +209,9 @@ let lang = LS.get(KEY.lang, 'ar');
 if (!I18N[lang]) lang = 'ar';
 
 // ---- authoritative translations lookup, built from data.js (R3D_DATA) ----
+const GLOSS_LOOKUP = Object.create(null);
+const TYPE_LOOKUP  = Object.create(null);
+const SUB_LOOKUP   = Object.create(null);
 (function buildLookups() {
   const all = window.R3D_DATA && window.R3D_DATA.cards;
   if (!all) return;
