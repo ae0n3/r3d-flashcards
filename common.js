@@ -208,6 +208,23 @@ const LANGS = ['ar', 'zh', 'en', 'es', 'fr'];
 let lang = LS.get(KEY.lang, 'ar');
 if (!I18N[lang]) lang = 'ar';
 
+// ---- authoritative translations lookup, built from data.js (R3D_DATA) ----
+(function buildLookups() {
+  const all = window.R3D_DATA && window.R3D_DATA.cards;
+  if (!all) return;
+  for (const key in all) {
+    const arr = all[key];
+    for (const c of arr) {
+      const ar = c.ar || '';
+      if (ar && !(ar in GLOSS_LOOKUP)) GLOSS_LOOKUP[ar] = c.trans || {};
+      const t = c.trans_type || {};
+      if (c.type && !(c.type in TYPE_LOOKUP)) TYPE_LOOKUP[c.type] = t;
+      const s = c.trans_sub || {};
+      if (c.sub && !(c.sub in SUB_LOOKUP)) SUB_LOOKUP[c.sub] = s;
+    }
+  }
+})();
+
 function t(key, vars) {
   let s = (I18N[lang] && I18N[lang][key]) || (I18N.ar[key] || key);
   if (vars) for (const k in vars) s = s.split('{' + k + '}').join(String(vars[k]));
@@ -218,7 +235,11 @@ function setLang(l) { if (!I18N[l]) return; lang = l; LS.set(KEY.lang, l); apply
 function gloss(card) {
   if (!card) return '';
   const tr = card.trans || {};
-  return tr[lang] || card.ar || tr.en || '';
+  if (tr[lang]) return tr[lang];
+  if (tr.en) return tr.en;
+  const found = GLOSS_LOOKUP[card.ar || ''];
+  if (found && found[lang]) return found[lang];
+  return card.ar || '';
 }
 function glossOf(front, lessonId) {
   const cards = (window.R3D_DATA && window.R3D_DATA.cards[lessonId]) || [];
@@ -228,12 +249,18 @@ function glossOf(front, lessonId) {
 function cardType(card) {
   if (!card) return '';
   const tr = card.trans_type || {};
-  return tr[lang] || card.type || '';
+  if (tr[lang]) return tr[lang];
+  const found = TYPE_LOOKUP[card.type || ''];
+  if (found && found[lang]) return found[lang];
+  return card.type || '';
 }
 function cardSub(card) {
   if (!card) return '';
   const tr = card.trans_sub || {};
-  return tr[lang] || card.sub || '';
+  if (tr[lang]) return tr[lang];
+  const found = SUB_LOOKUP[card.sub || ''];
+  if (found && found[lang]) return found[lang];
+  return card.sub || '';
 }
 function applyI18n() {
   document.documentElement.lang = lang;
