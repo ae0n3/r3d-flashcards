@@ -249,7 +249,7 @@ function mountLangSelector() {
   if (!box) return;
   box.innerHTML = '';
   const lab = document.createElement('span');
-  lab.className = 'langlab'; lab.textContent = t('lang.label');
+  lab.className = 'langlab'; lab.setAttribute('data-i18n', 'lang.label');
   const sel = document.createElement('select');
   sel.id = 'langSel';
   LANGS.forEach(l => {
