@@ -205,7 +205,13 @@ const I18N = {
   }
 };
 const LANGS = ['ar', 'zh', 'en', 'es', 'fr'];
-let lang = LS.get(KEY.lang, 'ar');
+let lang = LS.get(KEY.lang, null);
+if (!lang || !I18N[lang]) {
+  // first visit (or unknown stored value): detect from the device language
+  const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+  const code = nav.slice(0, 2);
+  lang = I18N[code] ? code : 'ar';
+}
 if (!I18N[lang]) lang = 'ar';
 
 // ---- authoritative translations lookup, built from data.js (R3D_DATA) ----
