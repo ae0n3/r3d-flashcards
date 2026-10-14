@@ -570,5 +570,11 @@ window.R3D = {
   gloss: gloss, glossOf: glossOf, cardType: cardType, cardSub: cardSub
 };
 
-applyI18n();
+// expose shared helpers for inline page scripts (lesson/review) that call them directly
+// (these pages' scripts live OUTSIDE common.js's IIFE, so they need the global refs)
+window.gloss = gloss;
+window.cardType = cardType;
+window.cardSub = cardSub;
 })();
+
+applyI18n();
