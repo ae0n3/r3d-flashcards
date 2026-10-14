@@ -237,6 +237,7 @@ function setLang(l) { if (!I18N[l]) return; lang = l; LS.set(KEY.lang, l); apply
 // card gloss in the current UI language (falls back to Arabic, then English)
 function gloss(card) {
   if (!card) return '';
+  if (lang === 'ar') return card.ar || '';
   const tr = card.trans || {};
   if (tr[lang]) return tr[lang];
   if (tr.en) return tr.en;
