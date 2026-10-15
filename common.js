@@ -202,9 +202,45 @@ const I18N = {
     'review.know': '✓ Je sais', 'review.dunno': '✗ Je révise encore',
     'review.back': '← Retour', 'review.masteredToast': 'Maîtrisé ✅',
     'review.streak': 'Bonnes réponses d\'affilée : {n}/2'
+  },
+  vi: {
+    __name: 'Tiếng Việt',
+    'app.sub': '✅ Bản điện thoại · nhấn để lật · dùng được offline',
+    'stats.progress': 'Tiến độ', 'stats.know': 'Đã nắm', 'stats.review': 'Còn phải ôn',
+    'cat.all': 'Tất cả', 'cat.word': 'Từ vựng', 'cat.sent': 'Câu chính', 'cat.gram': 'Ngữ pháp',
+    'tag.word': 'Từ', 'tag.sent': 'Câu chính', 'tag.gram': 'Ngữ pháp',
+    'hint.flip': 'Nhấn để lật ↻ · 🔊 để nghe',
+    'btn.listen': 'Nghe', 'btn.example': 'Ví dụ',
+    'btn.prev': '‹ Trước', 'btn.know': '✓ Đã nắm', 'btn.dunno': '✗ Cần ôn', 'btn.next': 'Tiếp ›',
+    'tool.shuffle': '🔀 Xáo trộn', 'tool.reset': '♻️ Đặt lại tiến độ', 'tool.quiz': '📝 Thi bài học',
+    'done.title': 'Tuyệt vời! Bạn đã xong hết các thẻ',
+    'done.quiz': '📝 Bắt đầu bài thi',
+    'footer.tts': 'Phát âm: phiên âm Hán ngữ có thanh điệu dưới mỗi chữ',
+    'quiz.title': 'Bài thi', 'quiz.progress': 'Câu {n} / {total}',
+    'quiz.dirZh': 'Chọn nghĩa đúng', 'quiz.dirAr': 'Chọn từ đúng',
+    'quiz.correct': '✅ Đúng!', 'quiz.wrong': '❌ Sai — đáp án đúng: {x}',
+    'quiz.score': 'Điểm của bạn: {s} / {t}', 'quiz.resultTitle': 'Kết thúc bài thi',
+    'quiz.wrongNote': '{n} từ đã tự động vào bộ ôn tập',
+    'quiz.again': '🔁 Làm lại', 'quiz.close': 'Đóng',
+    'confirm.reset': 'Đặt lại toàn bộ tiến độ của bài học này?',
+    'lang.label': 'Ngôn ngữ',
+    'nav.index': '🏠 Trang chủ', 'nav.review': '📒 Ôn tập',
+    'index.title': 'Thẻ ghi nhớ', 'index.sub': 'Chọn bài học — dùng được offline',
+    'index.reviewBtn': '📒 Bộ thẻ ôn tập',
+    'index.reviewCount': '{n} từ cần ôn', 'index.mastered': 'Đã nắm: {n}',
+    'index.progress': 'Tiến độ: {p}%', 'index.quizScore': 'Bài thi: {s}/{t}',
+    'index.noQuiz': 'Chưa thi', 'index.tip': '💡 Trên Safari: nút Chia sẻ ← «Thêm vào màn hình chính»',
+    'review.title': 'Bộ thẻ ôn tập',
+    'review.empty': 'Không có gì cần ôn 🎉',
+    'review.emptyTxt': 'Tất cả từ đều mới hoặc đã nắm — nhấn ✗ vào từ trong bài học để đưa nó về đây.',
+    'review.remaining': 'Cần ôn: {n}', 'review.mastered': 'Đã nắm: {n}',
+    'review.hint': 'Nhấn để lật ↻ · 🔊 để nghe',
+    'review.know': '✓ Đã nắm', 'review.dunno': '✗ Vẫn cần ôn',
+    'review.back': '← Trở lại', 'review.masteredToast': 'Đã nắm ✅',
+    'review.streak': 'Đúng liên tiếp: {n}/2'
   }
 };
-const LANGS = ['ar', 'zh', 'en', 'es', 'fr'];
+const LANGS = ['ar', 'zh', 'en', 'es', 'fr', 'vi'];
 let lang = LS.get(KEY.lang, null);
 if (!lang || !I18N[lang]) {
   // first visit (or unknown stored value): detect from the device language
