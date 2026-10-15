@@ -349,8 +349,7 @@ function applyI18n() {
   document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
   document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
   document.querySelectorAll('[data-i18n-title]').forEach(el => { el.title = t(el.getAttribute('data-i18n-title')); });
-  const sel = document.getElementById('langSel');
-  if (sel) sel.value = lang;
+  if (mountLangSelector.refresh) mountLangSelector.refresh();
   window.dispatchEvent(new CustomEvent('r3d:lang', { detail: { lang: lang } }));
 }
 function mountLangSelector() {
@@ -359,16 +358,58 @@ function mountLangSelector() {
   box.innerHTML = '';
   const lab = document.createElement('span');
   lab.className = 'langlab'; lab.setAttribute('data-i18n', 'lang.label');
-  const sel = document.createElement('select');
-  sel.id = 'langSel';
+  const wrap = document.createElement('div');
+  wrap.className = 'langwrap';
+  const btn = document.createElement('button');
+  btn.className = 'langbtn'; btn.type = 'button'; btn.id = 'langBtn';
+  btn.setAttribute('aria-haspopup', 'listbox'); btn.setAttribute('aria-expanded', 'false');
+  btn.innerHTML =
+    '<svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></svg>' +
+    '<span class="langname"></span>' +
+    '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
+  const menu = document.createElement('div');
+  menu.className = 'langmenu'; menu.setAttribute('role', 'listbox');
   LANGS.forEach(l => {
-    const o = document.createElement('option');
-    o.value = l; o.textContent = I18N[l].__name || l;
-    sel.appendChild(o);
+    const item = document.createElement('button');
+    item.className = 'langitem'; item.type = 'button'; item.setAttribute('role', 'option');
+    item.dataset.lang = l;
+    const dot = document.createElement('span'); dot.className = 'dot';
+    const nm = document.createElement('span'); nm.className = 'lname';
+    nm.textContent = I18N[l].__name || l;
+    const code = document.createElement('span'); code.className = 'code';
+    code.textContent = l.toUpperCase();
+    item.appendChild(dot); item.appendChild(nm); item.appendChild(code);
+    item.addEventListener('click', (e) => { e.stopPropagation(); setLang(l); closeMenu(); });
+    menu.appendChild(item);
   });
-  sel.value = lang;
-  sel.addEventListener('change', () => setLang(sel.value));
-  box.appendChild(lab); box.appendChild(sel);
+  function closeMenu() {
+    wrap.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = wrap.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => { if (!wrap.contains(e.target)) closeMenu(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+  box.appendChild(lab); box.appendChild(wrap);
+  wrap.appendChild(btn); wrap.appendChild(menu);
+  // hidden select-compatible element: keeps any legacy caller working (value get/set)
+  const selApi = document.createElement('span');
+  selApi.id = 'langSel'; selApi.style.display = 'none';
+  Object.defineProperty(selApi, 'value', {
+    get: () => lang,
+    set: (v) => { if (I18N[v]) setLang(v); }
+  });
+  box.appendChild(selApi);
+  // sync hook used by applyI18n()
+  mountLangSelector.refresh = function () {
+    btn.querySelector('.langname').textContent = I18N[lang].__name || lang;
+    menu.querySelectorAll('.langitem').forEach(it =>
+      it.classList.toggle('active', it.dataset.lang === lang));
+  };
+  mountLangSelector.refresh();
 }
 
 // ---------------- review state machine ----------------
