@@ -582,6 +582,9 @@ window.R3D = {
 window.gloss = gloss;
 window.cardType = cardType;
 window.cardSub = cardSub;
-})();
 
+// apply the initial UI language + dir on load — MUST stay INSIDE the IIFE:
+// applyI18n is not visible outside it (calling it after })(); throws a
+// ReferenceError, so first-visit language detection never took effect)
 applyI18n();
+})();
