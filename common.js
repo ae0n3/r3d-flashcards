@@ -238,9 +238,45 @@ const I18N = {
     'review.know': '✓ Đã nắm', 'review.dunno': '✗ Vẫn cần ôn',
     'review.back': '← Trở lại', 'review.masteredToast': 'Đã nắm ✅',
     'review.streak': 'Đúng liên tiếp: {n}/2'
+  },
+  id: {
+    __name: 'Bahasa Indonesia',
+    'app.sub': '✅ Versi mobile · tap untuk membalik · berjalan offline',
+    'stats.progress': 'Progres', 'stats.know': 'Dikuasai', 'stats.review': 'Perlu diulang',
+    'cat.all': 'Semua', 'cat.word': 'Kata', 'cat.sent': 'Kalimat kunci', 'cat.gram': 'Tata bahasa',
+    'tag.word': 'Kata', 'tag.sent': 'Kalimat kunci', 'tag.gram': 'Tata bahasa',
+    'hint.flip': 'Tap untuk membalik ↻ · 🔊 untuk mendengar',
+    'btn.listen': 'Dengarkan', 'btn.example': 'Contoh',
+    'btn.prev': '‹ Sebelumnya', 'btn.know': '✓ Tahu', 'btn.dunno': '✗ Ulangi', 'btn.next': 'Berikutnya ›',
+    'tool.shuffle': '🔀 Acak', 'tool.reset': '♻️ Atur ulang progres', 'tool.quiz': '📝 Kuis pelajaran',
+    'done.title': 'Hebat! Semua kartu selesai',
+    'done.quiz': '📝 Mulai kuis pelajaran',
+    'footer.tts': 'Pengucapan: pinyin dengan nada di bawah setiap karakter',
+    'quiz.title': 'Kuis pelajaran', 'quiz.progress': 'Soal {n} dari {total}',
+    'quiz.dirZh': 'Pilih arti yang benar', 'quiz.dirAr': 'Pilih kata yang benar',
+    'quiz.correct': '✅ Benar!', 'quiz.wrong': '❌ Salah — jawaban benar: {x}',
+    'quiz.score': 'Nilai Anda: {s} / {t}', 'quiz.resultTitle': 'Kuis selesai',
+    'quiz.wrongNote': '{n} kata masuk ke set pengulangan otomatis',
+    'quiz.again': '🔁 Coba lagi', 'quiz.close': 'Tutup',
+    'confirm.reset': 'Atur ulang semua progres pelajaran ini?',
+    'lang.label': 'Bahasa',
+    'nav.index': '🏠 Beranda', 'nav.review': '📒 Ulangan',
+    'index.title': 'Kartu hafalan', 'index.sub': 'Pilih pelajaran — berjalan offline',
+    'index.reviewBtn': '📒 Set ulangan',
+    'index.reviewCount': '{n} perlu diulang', 'index.mastered': 'Dikuasai: {n}',
+    'index.progress': 'Progres: {p}%', 'index.quizScore': 'Kuis: {s}/{t}',
+    'index.noQuiz': 'Belum dikerjakan', 'index.tip': '💡 Di Safari: tombol Bagikan ← «Tambahkan ke Layar Utama»',
+    'review.title': 'Set ulangan',
+    'review.empty': 'Tidak ada yang perlu diulang 🎉',
+    'review.emptyTxt': 'Semua kata baru atau sudah dikuasai — tekan ✗ pada kata di pelajaran untuk membawanya kembali ke sini.',
+    'review.remaining': 'Perlu diulang: {n}', 'review.mastered': 'Dikuasai: {n}',
+    'review.hint': 'Tap untuk membalik ↻ · 🔊 untuk mendengar',
+    'review.know': '✓ Tahu', 'review.dunno': '✗ Masih diulang',
+    'review.back': '← Kembali', 'review.masteredToast': 'Dikuasai ✅',
+    'review.streak': 'Jawaban benar beruntun: {n}/2'
   }
 };
-const LANGS = ['ar', 'zh', 'en', 'es', 'fr', 'vi'];
+const LANGS = ['ar', 'zh', 'en', 'es', 'fr', 'vi', 'id'];
 let lang = LS.get(KEY.lang, null);
 if (!lang || !I18N[lang]) {
   // first visit (or unknown stored value): detect from the device language
