@@ -10,7 +10,7 @@ window.R3D_DATA = (function () {
     { id: 'l3', num: '第三课', title: '我吃了早饭就来了', file: 'lesson3-flashcards.html' },
     { id: 'l4', num: '第四课', title: '我都做对了',   file: 'lesson4-flashcards.html' },
     { id: 'l5', num: '第五课', title: '我来了两个多月了', file: 'lesson5-flashcards.html' },
-    { id: 'l6', num: '第六课', title: '我比你更喜欢音乐', file: 'lesson6-flashcards.html?v=8' }
+    { id: 'l6', num: '第六课', title: '我比你更喜欢音乐', file: 'lesson6-flashcards.html?v=9' }
   ];
   const cards = { l1: [], l2: [], l3: [], l4: [], l5: [] };
 
