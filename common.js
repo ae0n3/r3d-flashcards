@@ -311,7 +311,7 @@ function t(key, vars) {
   if (vars) for (const k in vars) s = s.split('{' + k + '}').join(String(vars[k]));
   return s;
 }
-function setLang(l) { if (!I18N[l]) return; lang = l; LS.set(KEY.lang, l); applyI18n(); }
+function setLang(l) { if (!I18N[l]) return; lang = l; window.R3D_LANG = l; LS.set(KEY.lang, l); applyI18n(); }
 // card gloss in the current UI language (falls back to Arabic, then English)
 function gloss(card) {
   if (!card) return '';
@@ -544,11 +544,11 @@ function shuffleArr(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math
 
 // ---------------- quiz engine ----------------
 function buildQuiz(lessonId) {
-  const arr = (window.R3D_DATA.cards[lessonId] || []).map((c, i) => ({ i: i, cat: c.cat, front: c.front, ar: gloss(c) }));
-  const usable = arr.filter(c => c.cat !== 'gram' && c.front && c.ar);
+  const arr = (window.R3D_DATA.cards[lessonId] || []).map((c, i) => ({ i: i, cat: c.cat, front: c.front, gloss: gloss(c) }));
+  const usable = arr.filter(c => c.cat !== 'gram' && c.front && c.gloss);
   const qs = usable.map(c => {
-    const dir = Math.random() < 0.5 ? 'zh2ar' : 'ar2zh';
-    return { key: lessonId + ':' + c.i, dir: dir, front: c.front, ar: c.ar, ans: dir === 'zh2ar' ? c.ar : c.front };
+    const dir = Math.random() < 0.5 ? 'zh2gloss' : 'gloss2zh';
+    return { key: lessonId + ':' + c.i, dir: dir, front: c.front, gloss: c.gloss, ans: dir === 'zh2gloss' ? c.gloss : c.front };
   });
   qs.forEach(q => {
     const others = usable.filter(c => c.i !== parseInt(q.key.split(':')[1], 10));
@@ -559,7 +559,7 @@ function buildQuiz(lessonId) {
     while (vals.length < 3 && others.length && guard < 200) {
       guard++;
       const c = others[Math.floor(Math.random() * others.length)];
-      const v = q.dir === 'zh2ar' ? c.ar : c.front;
+      const v = q.dir === 'zh2gloss' ? c.gloss : c.front;
       if (!seen[v]) { seen[v] = 1; vals.push(v); }
     }
     q.choices = shuffleArr([q.ans].concat(vals));
@@ -591,12 +591,13 @@ const Quiz = {
 
     const dirLab = document.createElement('div');
     dirLab.className = 'qdir';
-    dirLab.textContent = q.dir === 'zh2ar' ? t('quiz.dirZh') : t('quiz.dirAr');
+    dirLab.textContent = q.dir === 'zh2gloss' ? t('quiz.dirZh') : t('quiz.dirAr');
     root.appendChild(dirLab);
 
     const prompt = document.createElement('div');
-    prompt.className = 'qprompt' + (q.dir === 'zh2ar' ? '' : ' ar');
-    prompt.textContent = q.dir === 'zh2ar' ? q.front : q.ar;
+    const promptLang = q.dir === 'zh2gloss' ? 'zh' : window.R3D_LANG || 'ar';
+    prompt.className = 'qprompt' + (promptLang === 'ar' ? ' ar' : '');
+    prompt.textContent = q.dir === 'zh2gloss' ? q.front : q.gloss;
     root.appendChild(prompt);
 
     const choices = document.createElement('div');
