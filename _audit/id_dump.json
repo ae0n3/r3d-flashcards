@@ -1,0 +1,1605 @@
+[
+ {
+  "front": "喂",
+  "ar": "ألو (على الهاتف)",
+  "en": "Hello (on the phone)",
+  "type": "تعبير",
+  "sub": ""
+ },
+ {
+  "front": "阿姨",
+  "ar": "العمة · الخالة",
+  "en": "Aunt (mother's sister)",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "中学",
+  "ar": "مدرسة متوسطة",
+  "en": "Middle school",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "出国",
+  "ar": "يسافر إلى الخارج",
+  "en": "Go abroad",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "打(电话)",
+  "ar": "يُجري (مكالمة)",
+  "en": "Make (a call)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "关机",
+  "ar": "يُطفئ الجهاز (关 = يُغلق)",
+  "en": "Turn off the device (关 = close)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "对了",
+  "ar": "صحيح! · أه نعم",
+  "en": "Right! · Oh yes",
+  "type": "تعبير",
+  "sub": ""
+ },
+ {
+  "front": "忘",
+  "ar": "ينسى",
+  "en": "Forget",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "开机",
+  "ar": "يُشغّل الجهاز (开 = يفتح/يشغّل)",
+  "en": "Turn on the device (开 = open/turn on)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "又",
+  "ar": "مجدداً (تكرر في الماضي)",
+  "en": "Again (past repetition)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "向",
+  "ar": "نحو",
+  "en": "Towards",
+  "type": "حرف جر",
+  "sub": ""
+ },
+ {
+  "front": "接",
+  "ar": "يلتقط (الهاتف) · يستقبل",
+  "en": "Pick up (the phone) · receive",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "踢",
+  "ar": "يركُل (الكرة)",
+  "en": "Kick (the ball)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "比赛",
+  "ar": "مباراة · مسابقة",
+  "en": "Match · competition",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "队",
+  "ar": "فريق",
+  "en": "Team",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "输",
+  "ar": "يخسر",
+  "en": "Lose",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "赢",
+  "ar": "يفوز",
+  "en": "Win",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "比",
+  "ar": "يقارن · نسبة (二比一)",
+  "en": "Compare · ratio (二比一)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "祝贺",
+  "ar": "يُهنّئ",
+  "en": "Congratulate",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "哎",
+  "ar": "آه! (تعبير تعجّب)",
+  "en": "Ah! (exclamation of surprise)",
+  "type": "أداة",
+  "sub": ""
+ },
+ {
+  "front": "上",
+  "ar": "يصعد · يدخل (صف/فصل)",
+  "en": "Go up · enter (class)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "托福",
+  "ar": "اختبار التوفل",
+  "en": "TOEFL test",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "已经",
+  "ar": "سابقاً · قد",
+  "en": "Already · have",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "考",
+  "ar": "يخضع لامتحان",
+  "en": "Take (an exam)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "陪",
+  "ar": "يرافق",
+  "en": "Accompany",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "喂，是田芳吗？",
+  "ar": "ألو، هل هذه تيان فانغ؟",
+  "en": "Hello, is this Tianfang?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "田芳不在。是张东吧。",
+  "ar": "تيان فانغ ليست هنا. أنت تشانغ دونغ، صحيح؟",
+  "en": "Tianfang isn't here. You're Zhangdong, right?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "阿姨，您好！田芳去哪儿了？",
+  "ar": "مرحباً يا خالة! أين ذهبت تيان فانغ؟",
+  "en": "Hello, Aunt! Where did Tianfang go?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "她四点就去同学家了。",
+  "ar": "ذهبت إلى بيت صديقتها منذ الرابعة.",
+  "en": "She went to her classmate's home at four.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我打了。可是她关机了。",
+  "ar": "لقد اتصلت. لكن هاتفها مغلق.",
+  "en": "I called. But her phone was off.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "你过一会儿再打吧。",
+  "ar": "اتصل بعد قليل.",
+  "en": "Call again later.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "田芳回来了没有？还没有呢。",
+  "ar": "هل عادت تيان فانغ؟ ليس بعد.",
+  "en": "Has Tianfang come back? Not yet.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "啊！对了，我忘开机了。",
+  "ar": "آه! صحيح، نسيت أن أشغّل الهاتف.",
+  "en": "Oh! Right, I forgot to turn on the phone.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "今天我们跟留学生代表队比赛了。",
+  "ar": "لعبنا اليوم ضد فريق الطلاب الدارسين الممثل.",
+  "en": "Today we played against the international students' team.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "你们队又输了吧？没有。这次我们赢了。",
+  "ar": "فريقكم خسر مجدداً؟ لا. هذه المرة فزنا.",
+  "en": "Your team lost again? No. This time we won.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "几比几？二比一。祝贺你们！",
+  "ar": "كم كانت النتيجة؟ ٢-١. مبروك لكم!",
+  "en": "What was the score? 2-1. Congratulations!",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "了…没有؟ / 还没…呢",
+  "ar": "«了» في آخر الجملة تؤكّد حدوث الفعل. السؤال: <b>…了没有؟</b> (هل…؟). والنفي: <b>还没(有)…呢</b> (لم… بعد).<br><span style='color:var(--muted)'>你吃饭了没有？/ 我还没吃呢.</span>",
+  "en": "了 at the end of a sentence confirms the action happened. Question: <b>…了没有？</b> (Did…?). Negative: <b>还没(有)…呢</b> (not… yet).<br><span style='color:var(--muted)'>你吃饭了没有？/ 我还没吃呢。</span>",
+  "type": "",
+  "sub": "نبرة 了 والسؤال"
+ },
+ {
+  "front": "又 vs 再",
+  "ar": "<b>又</b> = الفعل تكرّر في الماضي: <span style='color:var(--muted)'>他昨天来，今天又来了</span><br><b>再</b> = التكرار في المستقبل (لم يحدث بعد): <span style='color:var(--muted)'>明天再来</span>",
+  "en": "<b>又</b> = the action repeated in the past: <span style='color:var(--muted)'>他昨天来，今天又来了</span><br><b>再</b> = repetition in the future (hasn't happened yet): <span style='color:var(--muted)'>明天再来</span>",
+  "type": "",
+  "sub": "تكرار الفعل"
+ },
+ {
+  "front": "是不是 / 不是…吗؟ / 吧",
+  "ar": "<b>是不是</b> = «هل…؟» وتأتي قبل الفعل أو آخر الجملة: <span style='color:var(--muted)'>你是不是忘了؟/ 你忘了，是不是؟</span><br><b>不是…吗؟</b> = سؤال تأكيدي: <span style='color:var(--muted)'>你不是要上托福班吗؟</span><br><b>吧</b> = نبرة تخمين أو اقتراح: <span style='color:var(--muted)'>你过一会儿再打吧</span>",
+  "en": "<b>是不是</b> = \"Did…?\" placed before the verb or at the end: <span style='color:var(--muted)'>你是不是忘了？/ 你忘了，是不是？</span><br><b>不是…吗？</b> = confirmatory question: <span style='color:var(--muted)'>你不是要上托福班吗？</span><br><b>吧</b> = tone of guess or suggestion: <span style='color:var(--muted)'>你过一会儿再打吧</span>",
+  "type": "",
+  "sub": "أسئلة التأكيد"
+ },
+ {
+  "front": "了",
+  "ar": "حرف دلالة على إتمام الفعل",
+  "en": "Particle marking completed action",
+  "type": "أداة",
+  "sub": ""
+ },
+ {
+  "front": "病人",
+  "ar": "مريض",
+  "en": "Patient / sick person",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "肚子",
+  "ar": "بطن",
+  "en": "Belly / stomach",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "厉害",
+  "ar": "شديد · مرعب",
+  "en": "Severe · terrible",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "片",
+  "ar": "قرص (دواء)",
+  "en": "Tablet (medicine)",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "拉肚子",
+  "ar": "إسهال · مغص معوي",
+  "en": "Diarrhea · intestinal cramps",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "鱼",
+  "ar": "سمك",
+  "en": "Fish",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "牛肉",
+  "ar": "لحم بقر",
+  "en": "Beef",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "化验",
+  "ar": "تحليل مخبري",
+  "en": "Lab test",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "大便",
+  "ar": "براز",
+  "en": "Stool / feces",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "小便",
+  "ar": "بول",
+  "en": "Urine",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "检查",
+  "ar": "يفحص · تفتيش",
+  "en": "Examine · check",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "结果",
+  "ar": "نتيجة",
+  "en": "Result",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "出来",
+  "ar": "يخرج",
+  "en": "Come out / exit",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "得",
+  "ar": "يصاب بـ (مرض)",
+  "en": "Catch (an illness)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "肠炎",
+  "ar": "التهاب معوي",
+  "en": "Enteritis / intestinal inflammation",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "消化",
+  "ar": "هضم",
+  "en": "Digest / digestion",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "开(药)",
+  "ar": "يكتب (وصفة طبية)",
+  "en": "Prescribe (a prescription)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "打针",
+  "ar": "يأخذ حقنة · إبرة",
+  "en": "Get an injection · needle",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "后",
+  "ar": "بعد",
+  "en": "After",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "哭",
+  "ar": "يبكي",
+  "en": "Cry / weep",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "寂寞",
+  "ar": "وحدة · كآبة",
+  "en": "Loneliness · depression",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "所以",
+  "ar": "لذلك · لذا",
+  "en": "Therefore · so",
+  "type": "حرف عطف",
+  "sub": ""
+ },
+ {
+  "front": "别",
+  "ar": "لا · دع (ناهي)",
+  "en": "Don't · stop (prohibition)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "难过",
+  "ar": "حزين · متضايق",
+  "en": "Sad · upset",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "礼堂",
+  "ar": "قاعة احتفالات",
+  "en": "Auditorium / hall",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "舞会",
+  "ar": "حفل رقص",
+  "en": "Dance party / ball",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "跳舞",
+  "ar": "يرقص",
+  "en": "Dance",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "你怎么了？",
+  "ar": "ما بك؟ / ما حدث لك؟",
+  "en": "What's wrong? / What happened to you?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "肚子疼得厉害，在家吃了两片药，还不行。",
+  "ar": "بطني يؤلمني بشدة، أخذت قرصين في البيت ولم يتحسّن.",
+  "en": "My stomach hurts badly, I took two pills at home and it didn't get better.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "拉肚子了吗？拉了。",
+  "ar": "هل أصابك إسهال؟ نعم أصابني.",
+  "en": "Do you have diarrhea? Yes, I do.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "昨天吃什么了？就吃了一些鱼和牛肉。",
+  "ar": "ماذا أكلت أمس؟ أكلت فقط القليل من السمك واللحم.",
+  "en": "What did you eat yesterday? I only ate a little fish and meat.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "化验结果出来了吗？出来了。",
+  "ar": "هل ظهرت نتيجة التحليل؟ نعم ظهرت.",
+  "en": "Is the test result out? Yes, it is.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我是不是得了肠炎？不是肠炎，只是消化不好。",
+  "ar": "هل أصبت بالتهاب معوي؟ لا، مجرد عسر هضم.",
+  "en": "Did I get enteritis? No, just indigestion.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "一天三次，一次两片，饭后吃。",
+  "ar": "ثلاث مرات يومياً، قرصان في المرة، بعد الأكل.",
+  "en": "Three times a day, two pills each time, after meals.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "不是。想家了。因为感到寂寞，心情不好，所以很难过。",
+  "ar": "لا. أشعر بالاشتياق للوطن. لأنني أحس بالوحدة ومزاجي سيئ، فأنا حزين جداً.",
+  "en": "No. I feel homesick. Because I feel lonely and my mood is bad, I'm very sad.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "别难过了。你不想家吗？",
+  "ar": "لا تحزن. ألا تشتاق أنت للوطن؟",
+  "en": "Don't be sad. Aren't you homesick too?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。",
+  "ar": "الليلة حفل رقص في القاعة، لنذهب ونرقص معاً.",
+  "en": "There's a dance at the hall tonight, let's go dance together.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "动词 + 了",
+  "ar": "الفعل+<b>了</b> = الفعل اكتمل. مع مفعول محدَّد: <span style='color:var(--muted)'>我买了一本书</span> · مع مفعول غير محدَّد: <span style='color:var(--muted)'>我买了书了</span> · النفي: <span style='color:var(--muted)'>我没有买</span> · السؤال: <b>…了没有؟</b>",
+  "en": "Verb + <b>了</b> = the action is completed. With a specific object: <span style='color:var(--muted)'>我买了一本书</span> · With an unspecified object: <span style='color:var(--muted)'>我买了书了</span> · Negative: <span style='color:var(--muted)'>我没有买</span> · Question: <b>…了没有？</b>",
+  "type": "",
+  "sub": "الفعل المكتمل"
+ },
+ {
+  "front": "因为…所以…",
+  "ar": "<b>因为</b> = السبب، <b>所以</b> = النتيجة: <span style='color:var(--muted)'>因为感到寂寞，所以很难过</span><br>ويمكن استخدام كلٍّ منهما منفرداً.",
+  "en": "<b>因为</b> = cause, <b>所以</b> = result: <span style='color:var(--muted)'>因为感到寂寞，所以很难过</span><br>Each can also be used alone.",
+  "type": "",
+  "sub": "السبب والنتيجة"
+ },
+ {
+  "front": "就 (القليل)",
+  "ar": "<b>就</b> قبل العدد = «فقط»: <span style='color:var(--muted)'>就吃了一些鱼和牛肉</span> (أكلت القليل فقط)",
+  "en": "<b>就</b> before a quantity = \"only\": <span style='color:var(--muted)'>就吃了一些鱼和牛肉</span> (ate only a little)",
+  "type": "",
+  "sub": "حصر الكمية"
+ },
+ {
+  "front": "租",
+  "ar": "يستأجر",
+  "en": "Rent / lease",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "套",
+  "ar": "كلمة قياس (شقة)",
+  "en": "Measure word (apartment)",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "房子",
+  "ar": "بيت · منزل",
+  "en": "House · home",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "满意",
+  "ar": "راضٍ · مقتنع",
+  "en": "Satisfied · convinced",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "有的",
+  "ar": "بعض · البعض",
+  "en": "Some · some (people)",
+  "type": "ضمير",
+  "sub": ""
+ },
+ {
+  "front": "周围",
+  "ar": "حوالي · المحيط",
+  "en": "Around · surroundings",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "环境",
+  "ar": "بيئة · محيط",
+  "en": "Environment · surroundings",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "乱",
+  "ar": "فوضوي · مشوّش",
+  "en": "Messy · disorderly",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "厨房",
+  "ar": "مطبخ",
+  "en": "Kitchen",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "卧室",
+  "ar": "غرفة نوم",
+  "en": "Bedroom",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "客厅",
+  "ar": "صالة الاستقبال",
+  "en": "Living room / lounge",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "面积",
+  "ar": "مساحة",
+  "en": "Area / space",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "层",
+  "ar": "طابق",
+  "en": "Floor / story",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "平方米",
+  "ar": "متر مربع",
+  "en": "Square meter",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "上去",
+  "ar": "يصعد",
+  "en": "Go up / ascend",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "阳光",
+  "ar": "ضوء الشمس",
+  "en": "Sunlight",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "还是",
+  "ar": "ما زال · الأفضل (تفضيل)",
+  "en": "Still · preferably (preference)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "妻子",
+  "ar": "زوجة",
+  "en": "Wife",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "情况",
+  "ar": "حالة · وضع",
+  "en": "Situation · condition",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "才",
+  "ar": "فقط · متأخراً (ظرف زمن)",
+  "en": "Only · late (time adverb)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "堵车",
+  "ar": "ازدحام مروري",
+  "en": "Traffic jam",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "赶",
+  "ar": "يسرع · يدرك",
+  "en": "Hurry · catch up",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "要是",
+  "ar": "إذا · لو",
+  "en": "If · supposing",
+  "type": "حرف شرط",
+  "sub": ""
+ },
+ {
+  "front": "房租",
+  "ar": "إيجار",
+  "en": "Rent (payment)",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "虽然",
+  "ar": "مع أن · رغم أن",
+  "en": "Although · even though",
+  "type": "حرف عطف",
+  "sub": ""
+ },
+ {
+  "front": "真",
+  "ar": "حقاً · فعلاً",
+  "en": "Really · truly",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "条",
+  "ar": "كلمة قياس (نهر · طريق)",
+  "en": "Measure word (river · road)",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "河",
+  "ar": "نهر",
+  "en": "River",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "交通",
+  "ar": "مواصلات · مرور",
+  "en": "Transport · traffic",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "站",
+  "ar": "محطة · موقف",
+  "en": "Station · stop",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "公共汽车",
+  "ar": "باص عام",
+  "en": "Public bus",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "车站",
+  "ar": "محطة باص",
+  "en": "Bus station",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "旁边",
+  "ar": "بجانب · جانب",
+  "en": "Next to · beside",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "地铁",
+  "ar": "مترو الأنفاق",
+  "en": "Subway / metro",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "附近",
+  "ar": "جوار · قريب",
+  "en": "Nearby · close",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "体育馆",
+  "ar": "صالة رياضية",
+  "en": "Gymnasium / sports hall",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "方便",
+  "ar": "ملائم · مريح",
+  "en": "Convenient · comfortable",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "我吃了早饭就来了。",
+  "ar": "أكلت الفطور وجئت مباشرة.",
+  "en": "I ate breakfast and came right away.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "上次您看了几套房子？看了三套，都不是太满意。",
+  "ar": "المرة الماضية كم شقة شاهدت؟ شاهدت ثلاثاً ولم أقتنع بأيها.",
+  "en": "Last time how many apartments did you see? I saw three and wasn't satisfied with any.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "这几套房子，厨房，卧室还可以，但是客厅面积小了一点。",
+  "ar": "هذه الشقق، المطبخ وغرفة النوم لا بأس بهما، لكن الصالة أصغر قليلاً.",
+  "en": "These apartments, the kitchen and bedroom are okay, but the living room is a bit small.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "有没有大一点的？",
+  "ar": "أليس هناك (شقة) أكبر قليلاً؟",
+  "en": "Isn't there one a bit bigger?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "楼上18层有一套，客厅30多平方米。",
+  "ar": "في الطابق ١٨ شقة، صالتها أكثر من ٣٠ متراً مربعاً.",
+  "en": "On the 18th floor there's an apartment, its living room is over 30 square meters.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "这套房子下午就没有阳光了吧？",
+  "ar": "هذه الشقة بعد الظهر لا شمس لها، صحيح؟",
+  "en": "This apartment has no sun in the afternoon, right?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我还是想要下午都有阳光的。",
+  "ar": "ما زلت أريد شقة فيها شمس طوال فترة بعد الظهر.",
+  "en": "I still want an apartment with sun all afternoon.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我早就下班了。路上堵车堵得厉害。",
+  "ar": "انتهيت من العمل منذ زمن. الطريق مزدحم بشدة.",
+  "en": "I got off work long ago. The road is badly congested.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "房租多少钱？一个月三千块。",
+  "ar": "كم الإيجار؟ ٣٠٠٠ يوان شهرياً.",
+  "en": "How much is the rent? 3000 yuan a month.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "虽然贵了点儿，但是房子真好。",
+  "ar": "رغم أنه غالٍ قليلاً، لكن البيت رائع حقاً.",
+  "en": "Although it's a bit expensive, the house is really nice.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "周围环境怎么样？环境特别好。西边是山，山下便有一条小河。",
+  "ar": "كيف البيئة المحيطة؟ ممتازة. غرباً جبال، وتحت الجبال نهر صغير.",
+  "en": "How's the surrounding environment? Excellent. To the west are mountains, and below them a small river.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "交通很方便。楼下有公共汽车站，坐车十分钟就到公司了。",
+  "ar": "المواصلات مريحة جداً. تحت البيت محطة باص، ١٠ دقائق بالباص تصل للشركة.",
+  "en": "Transport is very convenient. There's a bus stop downstairs, 10 by bus to the company.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "就 / 才",
+  "ar": "<b>就</b> = أسرع أو أبكر من المتوقع: <span style='color:var(--muted)'>八点半就到了</span> (وصل الثامنة والنصف فقط)<br><b>才</b> = متأخراً أو الآن فقط: <span style='color:var(--muted)'>怎么现在才下班؟</span> (لماذا انتهيت من العمل الآن فقط؟)",
+  "en": "<b>就</b> = sooner or earlier than expected: <span style='color:var(--muted)'>八点半就到了</span> (arrived at 8:30 sharp)<br><b>才</b> = late or only now: <span style='color:var(--muted)'>怎么现在才下班？</span> (why did you just get off work now?)",
+  "type": "",
+  "sub": "ظرفا الزمن"
+ },
+ {
+  "front": "要是…就…",
+  "ar": "إذا… فإن…: <span style='color:var(--muted)'>要是你也满意，咱们就租了</span> (إذا اقتنعتِ أيضاً، نستأجرها فوراً)",
+  "en": "If… then…: <span style='color:var(--muted)'>要是你也满意，咱们就租了</span> (if you're also satisfied, we'll rent it right away)",
+  "type": "",
+  "sub": "الشرط"
+ },
+ {
+  "front": "虽然…但是…",
+  "ar": "مع أن… لكن: <span style='color:var(--muted)'>虽然贵了点儿，但是房子真好</span>",
+  "en": "Although… but: <span style='color:var(--muted)'>虽然贵了点儿，但是房子真好</span>",
+  "type": "",
+  "sub": "التنازل"
+ },
+ {
+  "front": "考试",
+  "ar": "امتحان",
+  "en": "Exam / test",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "题",
+  "ar": "سؤال · مسألة",
+  "en": "Question · problem",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "完",
+  "ar": "ينتهي · ينجز",
+  "en": "Finish · complete",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "到",
+  "ar": "يصل (كمكمل نتيجة)",
+  "en": "Reach (as result complement)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "成绩",
+  "ar": "نتيجة · درجة",
+  "en": "Result · grade",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "句子",
+  "ar": "جملة",
+  "en": "Sentence",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "干什么",
+  "ar": "يفعل ماذا",
+  "en": "Do what",
+  "type": "تعبير",
+  "sub": ""
+ },
+ {
+  "front": "干",
+  "ar": "يفعل",
+  "en": "Do",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "看见",
+  "ar": "يرى (نتيجة)",
+  "en": "See (as result)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "见",
+  "ar": "يرى",
+  "en": "See",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "词",
+  "ar": "كلمة",
+  "en": "Word",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "糟糕",
+  "ar": "يا للكارثة · سيء جداً",
+  "en": "Oh no! · terrible",
+  "type": "تعبير",
+  "sub": ""
+ },
+ {
+  "front": "成",
+  "ar": "يصبح (كمكمل نتيجة)",
+  "en": "Become (as result complement)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "回信",
+  "ar": "يرد على رسالة",
+  "en": "Reply to a letter",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "故事",
+  "ar": "قصة · حكاية",
+  "en": "Story · tale",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "有意思",
+  "ar": "ممتع · ذو معنى",
+  "en": "Interesting · meaningful",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "页",
+  "ar": "صفحة",
+  "en": "Page",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "笑",
+  "ar": "يضحك",
+  "en": "Laugh",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "会话",
+  "ar": "محادثة",
+  "en": "Conversation",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "念",
+  "ar": "يقرأ بصوت عالٍ",
+  "en": "Read aloud",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "答",
+  "ar": "يجيب",
+  "en": "Answer / reply",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "办法",
+  "ar": "طريقة · حل",
+  "en": "Way · method",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "合上",
+  "ar": "يطوي · يغلق (كتاب)",
+  "en": "Close (a book)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "上",
+  "ar": "يصعد · يلتصق (كمكمل نتيجة)",
+  "en": "Go up · attach (as result complement)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "听见",
+  "ar": "يسمع (نتيجة)",
+  "en": "Hear (as result)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "打开",
+  "ar": "يفتح",
+  "en": "Open",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "作业",
+  "ar": "واجب مدرسي",
+  "en": "Homework / school assignment",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "熟",
+  "ar": "متمكّن · بارع",
+  "en": "Proficient · skilled",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "在",
+  "ar": "مجدداً · مرة أخرى",
+  "en": "Again · once more",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "你今天考得怎么样？",
+  "ar": "كيف كان امتحانك اليوم؟",
+  "en": "How was your exam today?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "这次没考好。题太多了，我没有做完。",
+  "ar": "لم أنجح هذه المرة. الأسئلة كثيرة جداً ولم أكملها.",
+  "en": "I didn't do well this time. There were too many questions and I didn't finish.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我都做完了，但是没都做对，做错了两道题。",
+  "ar": "أكملت الكل لكن لم أصب في الكل، أخطأت في سؤالين.",
+  "en": "I finished everything but didn't get everything right, I made mistakes on two questions.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "语法题不太难，我觉得都做对了。听力比较难。",
+  "ar": "أسئلة القواعد ليست صعبة، أحس أنني أجبتها كلها صحيحة. الاستماع أصعب نسبياً.",
+  "en": "The grammar questions aren't hard, I feel I got them all right. Listening is relatively harder.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我也不知道做对了没有。我的词典呢？",
+  "ar": "لا أعرف أيضاً هل أصبت. وأين قاموسي؟",
+  "en": "I don't know either if I got them right. And where's my dictionary?",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "糟糕，写错了，是这个「得」，我写成这个「的」了。",
+  "ar": "يا للكارثة، كتبت خطأً: هو هذا «得» وأنا كتبت هذا «的».",
+  "en": "Oh no, I wrote it wrong: it's this \"得\" and I wrote this \"的\".",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "别查了，休息休息吧。快打开电脑，看看你买的电影光盘吧。",
+  "ar": "كفّ عن البحث، استرح. افتح الكمبيوتر وشاهد أقراص الأفلام التي اشتريتها.",
+  "en": "Stop searching, rest. Open the computer and watch the movie discs you bought.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "看完电影再做吧！",
+  "ar": "شاهد الفيلم أولاً ثم اعمل!",
+  "en": "Watch the movie first, then work!",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "她问了五个问题，我答对了四个，打错了一个。",
+  "ar": "سألتني خمسة أسئلة، أجبت أربعة صحيحة وأخطأت واحداً.",
+  "en": "She asked me five questions, I answered four correctly and got one wrong.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我们看到九点才看完。九点半才开始做作业。",
+  "ar": "شاهدنا حتى التاسعة حتى انتهى الفيلم. التاسعة والنصف بدأنا الواجب.",
+  "en": "We watched until nine until the movie ended. At nine thirty we started the homework.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "结果补语",
+  "ar": "الفعل + نتيجة مباشرة: <b>完、懂、见、开、上、到、给、成</b> + <b>好、对、错</b><br><span style='color:var(--muted)'>我做完了 / 我没做完 / 你做完了没有؟</span><br>النفي: 没+فعل+نتيجة · <b>了</b> بعد النتيجة وقبل المفعول: <span style='color:var(--muted)'>我做错了两个题</span>",
+  "en": "Verb + direct result: <b>完、懂、见、开、上、到、给、成</b> + <b>好、对、错</b><br><span style='color:var(--muted)'>我做完了 / 我没做完 / 你做完了没有？</span><br>Negative: 没+verb+result · <b>了</b> after the result and before the object: <span style='color:var(--muted)'>我做错了两个题</span>",
+  "type": "",
+  "sub": "مكمل النتيجة"
+ },
+ {
+  "front": "上 · 成 · 到",
+  "ar": "<b>上</b> = إغلاق/التصاق: <span style='color:var(--muted)'>关上门 · 合上书</span><br><b>成</b> = التحول: <span style='color:var(--muted)'>写成「找」字</span><br><b>到</b> = الوصول: <span style='color:var(--muted)'>找到 · 看到 · 才到家</span>",
+  "en": "<b>上</b> = closing/attaching: <span style='color:var(--muted)'>关上门 · 合上书</span><br><b>成</b> = transformation: <span style='color:var(--muted)'>写成「找」字</span><br><b>到</b> = reaching: <span style='color:var(--muted)'>找到 · 看到 · 才到家</span>",
+  "type": "",
+  "sub": "مكملات النتيجة"
+ },
+ {
+  "front": "主谓短语作定语",
+  "ar": "العبارة التي تسبق الاسم تحتاج <b>的</b>:<br><span style='color:var(--muted)'>你要的那本书 · 我们现在学的词</span>",
+  "en": "A phrase before a noun needs <b>的</b>:<br><span style='color:var(--muted)'>你要的那本书 · 我们现在学的词</span>",
+  "type": "",
+  "sub": "عبارة فاعل-خبير كصفة"
+ },
+ {
+  "front": "生活",
+  "ar": "حياة · يعيش",
+  "en": "Life · live",
+  "type": "اسم وفعل",
+  "sub": ""
+ },
+ {
+  "front": "差不多",
+  "ar": "تقريباً · ما يقارب",
+  "en": "Almost · nearly",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "习惯",
+  "ar": "عادة · يتعود على",
+  "en": "Habit · get used to",
+  "type": "فعل واسم",
+  "sub": ""
+ },
+ {
+  "front": "气候",
+  "ar": "مناخ",
+  "en": "Climate / weather",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "干燥",
+  "ar": "جاف (عن الجو)",
+  "en": "Dry (of weather)",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "干净",
+  "ar": "نظيف",
+  "en": "Clean",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "油腻",
+  "ar": "دسم · زيتي",
+  "en": "Greasy · oily",
+  "type": "صفة",
+  "sub": ""
+ },
+ {
+  "front": "菜",
+  "ar": "أكلة · طبق · خضار",
+  "en": "Food · dish · vegetable",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "牛奶",
+  "ar": "حليب",
+  "en": "Milk",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "奶牛",
+  "ar": "بقرة حلوب",
+  "en": "Dairy cow",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "不过",
+  "ar": "لكن · غير أن",
+  "en": "But · however",
+  "type": "حرف عطف",
+  "sub": ""
+ },
+ {
+  "front": "课间",
+  "ar": "فسحة بين الحصص",
+  "en": "Break between classes",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "块",
+  "ar": "قطعة · وحدة (عملة/قطع)",
+  "en": "Piece · unit (money/pieces)",
+  "type": "كلمة قياس",
+  "sub": ""
+ },
+ {
+  "front": "从来",
+  "ar": "أبداً · من قبل حتى الآن (مع النفي)",
+  "en": "Never · until now (with negation)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "午觉",
+  "ar": "قيلولة",
+  "en": "Nap / siesta",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "游泳",
+  "ar": "يسبح · سباحة",
+  "en": "Swim · swimming",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "功课",
+  "ar": "دروس · واجبات مدرسية",
+  "en": "Lessons · schoolwork",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "记住",
+  "ar": "يحفظ · يتذكر",
+  "en": "Memorize · remember",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "记",
+  "ar": "يتذكر · يسجل",
+  "en": "Remember · record",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "一般",
+  "ar": "عادةً · عموماً",
+  "en": "Usually · generally",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "感谢",
+  "ar": "يشكر · امتنان",
+  "en": "Thank · gratitude",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "父母",
+  "ar": "الوالدان",
+  "en": "Parents",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "机会",
+  "ar": "فرصة",
+  "en": "Opportunity · chance",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "原来",
+  "ar": "في الأصل · اتضح أنه",
+  "en": "Originally · it turns out that",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "练",
+  "ar": "يتمرن · يتدرب",
+  "en": "Practice · train",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "气功",
+  "ar": "التشي كونغ (تمارين تنفس)",
+  "en": "Qigong (breathing exercises)",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "延长",
+  "ar": "يمدّد · يطيل (المدة)",
+  "en": "Extend · prolong (duration)",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "好",
+  "ar": "كثيراً · طويلاً (ظرف مع 几/多)",
+  "en": "Much · long (adverb with 几/多)",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "不一定",
+  "ar": "ليس بالضرورة",
+  "en": "Not necessarily",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "钟头",
+  "ar": "ساعة (زمن)",
+  "en": "Hour (time)",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "效果",
+  "ar": "نتيجة · أثر",
+  "en": "Result · effect",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "挺",
+  "ar": "جداً · إلى حد كبير",
+  "en": "Very · quite",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "好处",
+  "ar": "فائدة · جانب إيجابي",
+  "en": "Benefit · advantage",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "坏处",
+  "ar": "ضرر · جانب سلبي",
+  "en": "Harm · disadvantage",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "慢性病",
+  "ar": "مرض مزمن",
+  "en": "Chronic disease",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "高血压",
+  "ar": "ارتفاع ضغط الدم",
+  "en": "High blood pressure",
+  "type": "اسم",
+  "sub": ""
+ },
+ {
+  "front": "失眠",
+  "ar": "أرق · الأرق",
+  "en": "Insomnia",
+  "type": "فعل واسم",
+  "sub": ""
+ },
+ {
+  "front": "必须",
+  "ar": "يجب · لا بد من",
+  "en": "Must · have to",
+  "type": "ظرف",
+  "sub": ""
+ },
+ {
+  "front": "打鱼",
+  "ar": "يصطاد السمك",
+  "en": "Catch fish",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "晒",
+  "ar": "يُجفف بالشمس · يُشرّق",
+  "en": "Sun-dry · shine",
+  "type": "فعل",
+  "sub": ""
+ },
+ {
+  "front": "我来了两个多月了。",
+  "ar": "أنا هنا منذ أكثر من شهرين (جئت ومرّ عليّ شهران وأكثر).",
+  "en": "I've been here for more than two months (I arrived and two months have passed).",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "对这儿的生活差不多已经习惯了。",
+  "ar": "تعوّدت تقريباً على الحياة هنا.",
+  "en": "I've gotten almost used to life here.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我每天早上七点多才起床。",
+  "ar": "أستيقظ كل صباح بعد السابعة بقليل فقط.",
+  "en": "I wake up every morning just after seven.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我从来不睡午觉。",
+  "ar": "لا أقيل أبداً (من قبل حتى الآن).",
+  "en": "I never take a nap (never, until now).",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "每天都坚持锻炼一个小时。",
+  "ar": "أتمسك بالتمارين ساعة كل يوم.",
+  "en": "I stick to exercising an hour every day.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我很感谢父母给我这个机会。",
+  "ar": "أنا ممتن جداً لوالديّ على هذه الفرصة.",
+  "en": "I'm very grateful to my parents for this opportunity.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "原来打算学一年，现在准备再延长一年。",
+  "ar": "كنت أنوي الدراسة سنة، والآن أستعد لتمديدها سنة أخرى.",
+  "en": "I was planning to study for one year, and now I'm preparing to extend it another year.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "已经练了好几年了。",
+  "ar": "أتدرب منذ عدة سنوات.",
+  "en": "I've been practicing for several years.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "我每天晚上一般要复习预习两个小时。",
+  "ar": "عادةً أراجع وأحضّر الدروس ساعتين كل ليلة.",
+  "en": "I usually review and prepare lessons for two hours every night.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "练气功必须坚持天天练，三天打鱼两天晒网不行。",
+  "ar": "التشي كونغ يحتاج استمراراً يومياً؛ \"ثلاثة أيام صيد ويومان تجفيف شبكة\" لا ينجح.",
+  "en": "Qigong needs daily consistency; \"three days fishing, two days drying nets\" won't work.",
+  "type": "",
+  "sub": ""
+ },
+ {
+  "front": "时量补语",
+  "ar": "المدة الزمنية تأتي <b>بعد الفعل</b> مباشرة.<br><span style=\"color:var(--muted)\">我来了两个多月了 / 我每天都练一个小时</span><br>مع المفعول: تُعاد الحركة أو تُوضع بين الفعل والمفعول:<br><span style=\"color:var(--muted)\">我写汉字写了半个小时 / 我看了一个小时电视 / 我学了两年(的)汉语</span>",
+  "en": "The duration comes directly <b>after the verb</b>.<br><span style=\"color:var(--muted)\">我来了两个多月了 / 我每天都练一个小时</span><br>With an object: the verb is repeated or the duration goes between verb and object:<br><span style=\"color:var(--muted)\">我写汉字写了半个小时 / 我看了一个小时电视 / 我学了两年(的)汉语</span>",
+  "type": "",
+  "sub": "مدة الفعل"
+ },
+ {
+  "front": "离合词",
+  "ar": "أفعال تُفصل عند إضافة المدة أو العدد: <b>睡觉、毕业、谈话、游泳、起床、打鱼</b><br><span style=\"color:var(--muted)\">我睡了八个小时觉 · 大学毕业两年了 · 谈一会儿话 · 游游泳</span>",
+  "en": "Verbs that split when adding duration or number: <b>睡觉、毕业、谈话、游泳、起床、打鱼</b><br><span style=\"color:var(--muted)\">我睡了八个小时觉 · 大学毕业两年了 · 谈一会儿话 · 游游泳</span>",
+  "type": "",
+  "sub": "الأفعال المنفصلة"
+ },
+ {
+  "front": "概数",
+  "ar": "طريقتان:<br>① <b>多</b> بعد العدد: <span style=\"color:var(--muted)\">两个多月 · 十多分钟 · 七点多</span><br>② رقمان متتاليان: <span style=\"color:var(--muted)\">两三个小时 · 十五六个人</span>",
+  "en": "Two ways:<br>① <b>多</b> after the number: <span style=\"color:var(--muted)\">两个多月 · 十多分钟 · 七点多</span><br>② Two consecutive numbers: <span style=\"color:var(--muted)\">两三个小时 · 十五六个人</span>",
+  "type": "",
+  "sub": "الأرقام التقريبية"
+ },
+ {
+  "front": "好 + 几/多",
+  "ar": "<b>好</b> قبل 几 أو 多 = كثيراً / طويلاً:<br><span style=\"color:var(--muted)\">好几年 (عدة سنوات) · 好一会儿 (برهة طويلة)</span>",
+  "en": "<b>好</b> before 几 or 多 = much / long:<br><span style=\"color:var(--muted)\">好几年 (several years) · 好一会儿 (quite a while)</span>",
+  "type": "",
+  "sub": "ظرف المقدار"
+ },
+ {
+  "front": "才 / 就",
+  "ar": "<b>才</b> = متأخراً أو بعد جهد: <span style=\"color:var(--muted)\">七点多才起床 · 十一点多才睡觉</span><br><b>就</b> = مبكراً أو بسهولة: <span style=\"color:var(--muted)\">五点多就起来了</span>",
+  "en": "<b>才</b> = late or after effort: <span style=\"color:var(--muted)\">七点多才起床 · 十一点多才睡觉</span><br><b>就</b> = early or easily: <span style=\"color:var(--muted)\">五点多就起来了</span>",
+  "type": "",
+  "sub": "التمارين ٦"
+ }
+]
